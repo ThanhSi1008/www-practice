@@ -3,4 +3,26 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
+    <servlet>
+        <servlet-name>Exercise3</servlet-name>
+        <servlet-class>iuh.fit.se.Exercise3</servlet-class>
+        <init-param>
+            <param-name>id</param-name>
+            <param-value>1</param-value>
+        </init-param>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>Nguyen Van A</param-value>
+        </init-param>
+        <init-param>
+            <param-name>email</param-name>
+            <param-value>a.nguyen@example.com</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Exercise3</servlet-name>
+        <url-pattern>/exercise3</url-pattern>
+    </servlet-mapping>
+
 </web-app>

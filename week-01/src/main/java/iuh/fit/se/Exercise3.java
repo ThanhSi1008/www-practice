@@ -9,14 +9,17 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet("/exercise3")
 public class Exercise3 extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        User user = new User(1, "Nguyen Van A", "a.nguyen@example.com");
+        int id = Integer.parseInt(getServletConfig().getInitParameter("id"));
+        String name = getServletConfig().getInitParameter("name");
+        String email = getServletConfig().getInitParameter("email");
+
+        User user = new User(id, name, email);
 
         ObjectMapper mapper = new ObjectMapper();
         String jsonString = mapper.writeValueAsString(user);

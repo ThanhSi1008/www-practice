@@ -26,7 +26,7 @@ public class Exercise2 extends HttpServlet {
         out.println("<title>Hello Servlet</title>");
         out.println("</head>");
         out.println("<body>");
-        out.println("<h1>Xin chào, đây là response từ doGet()</h1>");
+        out.println("<h1>Hello, this is response from doGet()</h1>");
         out.println("</body>");
         out.println("</html>");
     }
