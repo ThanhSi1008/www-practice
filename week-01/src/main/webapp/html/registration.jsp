@@ -18,25 +18,39 @@
     <h2>Registration Form</h2>
     <form method="post" action="../registration" name="registrationForm">
         <label>First Name:</label>
-        <input type="text" name="firstName" required>
+        <label>
+            <input type="text" name="firstName" required>
+        </label>
 
         <label>Last Name:</label>
-        <input type="text" name="lastName" required>
+        <label>
+            <input type="text" name="lastName" required>
+        </label>
 
         <label>Username:</label>
-        <input type="text" name="username" required>
+        <label>
+            <input type="text" name="username" required>
+        </label>
 
         <label>Email:</label>
-        <input type="email" name="email" required>
+        <label>
+            <input type="email" name="email" required>
+        </label>
 
         <label>Password:</label>
-        <input type="password" name="password" required>
+        <label>
+            <input type="password" name="password" required>
+        </label>
 
         <label>Facebook:</label>
-        <input type="text" name="facebook">
+        <label>
+            <input type="text" name="facebook">
+        </label>
 
         <label>Short Bio:</label>
-        <textarea name="shortBio" rows="4"></textarea>
+        <label>
+            <textarea name="shortBio" rows="4"></textarea>
+        </label>
 
         <input type="submit" value="Register">
     </form>
